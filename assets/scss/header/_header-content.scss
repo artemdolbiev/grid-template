@@ -1,0 +1,63 @@
+.header-content {
+  position: relative;
+
+  &__container {
+    max-width: $ul;
+    margin: auto;
+    padding-right: $gap;
+    padding-left: $gap;
+  }
+
+  &__title {
+    text-align: center;
+
+    @include lg-min {
+      margin: 0 0 53px;
+    }
+    @include lg {
+      margin: 0 0 43px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include sm {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  &__buttons .btn:first-of-type {
+    @include sm-min {
+      margin-right: $gap;
+    }
+    @include sm {
+      margin-bottom: $gap;
+    }
+  }
+
+  .btn {
+    @include lg-min {
+      min-width: 250px;
+
+      letter-spacing: 0.1em;
+
+      font-size: 1.125rem;
+    }
+    @include lg-md {
+      min-width: 200px;
+      height: 50px;
+      padding: 14px $gap;
+    }
+    @include md {
+      min-width: 170px;
+      height: 40px;
+      padding: 10px $gap;
+
+      letter-spacing: 0.05em;
+    }
+  }
+}
