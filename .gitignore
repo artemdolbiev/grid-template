@@ -1,10 +1,6 @@
 node_modules/
 # IntellijIdea files
-.idea/
-.DS_Store
 libs/
-samples/
-img/
 yarn.lock
 package-lock.json
 .vscode/
