@@ -31,6 +31,33 @@ h1 {
   }
 }
 
+h2 {
+  display: block;
+  font-family: $font-header;
+  color: $color-primary;
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
+  margin-top: 0;
+
+
+  @include lg-min {
+    font-size: 2.5rem;
+    margin-bottom: 56px;
+  }
+  @include lg-md {
+    font-size: 2rem;
+    margin-bottom: 42px;
+  }
+  @include md-sm {
+    font-size: 1.5rem;
+    margin-bottom: 36px;
+  }
+  @include sm {
+    font-size: 1.5rem;
+    margin-bottom: 36px;
+    text-align: center;
+  }
+}
 a {
   text-decoration: none;
 
