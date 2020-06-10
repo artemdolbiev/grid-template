@@ -21,8 +21,8 @@
 
   &__container {
     display: grid;
-    @extend %container;
 
+    @extend %container;
     @include lg-min {
       grid-gap: 100px;
       grid-template-areas: "b1 b2";
