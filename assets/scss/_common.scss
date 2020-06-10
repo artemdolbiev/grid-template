@@ -84,13 +84,7 @@ p {
 }
 
 .btn {
-  display: block;
-
-  height: 60px;
-  padding: 18px $gap;
-
-  transition: background-color 0.5s;
-  text-align: center;
+  @extend %btn;
 
   border: 2px solid $color-light;
   background-color: rgba($color-light, 0.1);
@@ -101,13 +95,8 @@ p {
 }
 
 .btn-accent {
-  display: block;
+  @extend %btn;
 
-  height: 60px;
-  padding: 18px $gap;
-
-  transition: background-color 0.5s;
-  text-align: center;
   letter-spacing: 0.1em;
 
   border: 2px solid $color-primary;
@@ -115,9 +104,6 @@ p {
 
   font-size: 1.125rem;
 
-  @include sm-min {
-    min-width: 350px;
-  }
   @include sm {
     width: 100%;
   }

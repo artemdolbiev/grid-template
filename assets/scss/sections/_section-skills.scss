@@ -37,6 +37,12 @@
     display: flex;
     justify-content: center;
   }
+  & .btn-accent {
+
+    @include sm-min {
+      min-width: 350px;
+    }
+  }
 }
 
 
